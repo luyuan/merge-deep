@@ -1,10 +1,10 @@
 {
   "name": "merge-deep2",
   "description": "Recursively merge values in a javascript object.",
-  "version": "3.0.0",
-  "homepage": "https://github.com/jonschlinkert/merge-deep",
+  "version": "3.0.1",
+  "homepage": "https://github.com/luyuan/merge-deep",
   "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
-  "repository": "jonschlinkert/merge-deep",
+  "repository": "luyuan/merge-deep",
   "bugs": {
     "url": "https://github.com/jonschlinkert/merge-deep/issues"
   },
