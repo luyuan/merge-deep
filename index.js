@@ -40,7 +40,12 @@ function merge(target, obj) {
     if (utils.isObject(newVal) && utils.isObject(oldVal)) {
       target[key] = merge(newVal, oldVal);
     } else if (Array.isArray(newVal)) {
-      target[key] = utils.union([], newVal, oldVal);
+      // FIXME: just for San
+      if (oldVal[0].id !== newVal[0].id) {
+        target[key] = utils.union([], newVal, oldVal);
+      } else {
+        target[key] = merge(newVal, oldVal);
+      }
     } else {
       target[key] = utils.clone(oldVal);
     }
