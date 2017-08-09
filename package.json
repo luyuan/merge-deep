@@ -1,5 +1,5 @@
 {
-  "name": "merge-deep",
+  "name": "merge-deep2",
   "description": "Recursively merge values in a javascript object.",
   "version": "3.0.0",
   "homepage": "https://github.com/jonschlinkert/merge-deep",
