@@ -4,14 +4,9 @@
  * Module dependencies
  */
 
-var utils = require('lazy-cache')(require);
-var fn = require;
-require = utils;
-
-require('arr-union', 'union');
-require('clone-deep', 'clone');
-require('kind-of', 'typeOf');
-require = fn;
+var union = require('arr-union');
+var clone = require('clone-deep');
+var typeOf = require('kind-of');
 
 utils.isObject = function(val) {
   return utils.typeOf(val) === 'object' || utils.typeOf(val) === 'function';
