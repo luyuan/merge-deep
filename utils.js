@@ -9,7 +9,7 @@ var clone = require('clone-deep');
 var typeOf = require('kind-of');
 
 var isObject = function(val) {
-  return utils.typeOf(val) === 'object' || utils.typeOf(val) === 'function';
+  return typeOf(val) === 'object' || typeOf(val) === 'function';
 };
 
 /**
@@ -17,8 +17,9 @@ var isObject = function(val) {
  */
 
 module.exports = {
-    utils: {
-        isObject: isObject
-    }
+    isObject: isObject,
+    union: union,
+    clone: clone,
+    typeOf: typeOf
 };
 
