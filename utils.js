@@ -8,7 +8,7 @@ var union = require('arr-union');
 var clone = require('clone-deep');
 var typeOf = require('kind-of');
 
-utils.isObject = function(val) {
+var isObject = function(val) {
   return utils.typeOf(val) === 'object' || utils.typeOf(val) === 'function';
 };
 
@@ -16,5 +16,9 @@ utils.isObject = function(val) {
  * Expose `utils` modules
  */
 
-module.exports = utils;
+module.exports = {
+    utils: {
+        isObject: isObject
+    }
+};
 
