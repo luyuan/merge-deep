@@ -1,7 +1,7 @@
 {
   "name": "merge-deep2",
   "description": "Recursively merge values in a javascript object.",
-  "version": "3.0.4",
+  "version": "3.0.5",
   "homepage": "https://github.com/luyuan/merge-deep",
   "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
   "repository": "luyuan/merge-deep",
